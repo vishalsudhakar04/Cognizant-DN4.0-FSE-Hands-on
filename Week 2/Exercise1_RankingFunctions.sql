@@ -6,15 +6,15 @@ GO
 
 CREATE TABLE Categories (
     CategoryID INT PRIMARY KEY,
-    CategoryName VARCHAR(100) NOT NULL
+    CategoryName VARCHAR(100)
 );
 GO
 
 CREATE TABLE Products (
     ProductID INT PRIMARY KEY,
-    ProductName VARCHAR(100) NOT NULL,
+    ProductName VARCHAR(100),
     CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID),
-    Price DECIMAL(10, 2) NOT NULL
+    Price DECIMAL(10, 2)
 );
 GO
 
