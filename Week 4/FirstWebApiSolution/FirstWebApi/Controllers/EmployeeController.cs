@@ -2,11 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FirstWebApi.Filters;
 namespace FirstWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [CustomAuthFilter]
     public class EmployeeController : ControllerBase
     {
         // This is our in-memory "database" of employees for this exercise.
