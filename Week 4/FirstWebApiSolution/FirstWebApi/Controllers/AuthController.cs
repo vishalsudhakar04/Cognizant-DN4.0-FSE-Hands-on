@@ -28,7 +28,7 @@ namespace FirstWebApi.Controllers
                 issuer: "mySystem",
                 audience: "myUsers",
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(10),
+                expires: DateTime.Now.AddMinutes(1),
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);

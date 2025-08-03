@@ -9,7 +9,7 @@ namespace FirstWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] // Replaced the custom filter with the standard Authorize attribute
+    [Authorize(Roles = "Admin,POC")] // Replaced the custom filter with the standard Authorize attribute
     public class EmployeeController : ControllerBase
     {
         private static List<Employee> _employees = new List<Employee>

@@ -36,9 +36,12 @@ namespace FirstWebApi
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = "mySystem",
                     ValidAudience = "myUsers",
-                    IssuerSigningKey = securityKey
+                    IssuerSigningKey = securityKey,
+                    // This line removes the default 5-minute grace period
+                    ClockSkew = TimeSpan.Zero
                 };
             });
+
 
             builder.Services.AddEndpointsApiExplorer();
 
