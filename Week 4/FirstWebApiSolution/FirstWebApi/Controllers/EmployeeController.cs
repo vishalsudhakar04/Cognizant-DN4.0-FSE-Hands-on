@@ -42,11 +42,14 @@ namespace FirstWebApi.Controllers
         // GET: api/Employee
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Employee>))]
+        [ProducesResponseType(500)]
         public ActionResult<IEnumerable<Employee>> Get()
         {
-            // This method calls the private helper to get the list of employees.
-            var employees = GetStandardEmployeeList();
-            return Ok(employees);
+            throw new Exception("This is a test exception!");
+
+            // The old code is now unreachable, which is fine for this test.
+            // var employees = GetStandardEmployeeList();
+            // return Ok(employees);
         }
     }
 }
