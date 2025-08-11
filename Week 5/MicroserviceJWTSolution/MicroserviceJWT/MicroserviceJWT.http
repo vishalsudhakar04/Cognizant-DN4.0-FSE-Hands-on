@@ -1,0 +1,6 @@
+@MicroserviceJWT_HostAddress = http://localhost:5029
+
+GET {{MicroserviceJWT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
