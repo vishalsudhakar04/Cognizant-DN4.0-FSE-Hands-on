@@ -1,0 +1,16 @@
+.box {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  vertical-align: top; /* Helps align the boxes nicely */
+}
+
+/* This targets the <dt> tags inside our component */
+.box dt {
+  font-weight: 500;
+  margin-top: 10px;
+}
