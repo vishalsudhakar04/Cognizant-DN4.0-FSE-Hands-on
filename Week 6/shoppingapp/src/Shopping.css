@@ -1,0 +1,28 @@
+.shopping-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.shopping-container h1 {
+  color: green;
+}
+
+.cart-table {
+  border-collapse: collapse;
+  width: 400px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+.cart-table th, .cart-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+}
