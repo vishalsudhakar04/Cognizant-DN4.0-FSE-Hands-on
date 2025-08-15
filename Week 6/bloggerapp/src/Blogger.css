@@ -1,0 +1,33 @@
+.app-container {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.detail-column {
+  flex: 1; /* Each column takes up equal space */
+  padding: 0 20px;
+  border-right: 2px solid green;
+}
+
+.detail-column:last-child {
+  border-right: none; /* Remove border from the last column */
+}
+
+.detail-column h2 {
+  font-size: 1.8em;
+}
+
+.detail-column h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.detail-column p, .detail-column h4 {
+  margin-top: 0;
+}
